@@ -67,37 +67,61 @@
 
   <body>
     <header class="header">
+      <!-- menu -->
       <div class="header__container">
         <img class="header__logo" src="./img/svg/logo.svg" alt="logo" />
 
-        <nav class="header__nav">
+        <nav class="header__navbar">
           <ul class="menu header__menu">
-            <li><a href="" class="menu__item">about us</a></li>
-            <li><a href="" class="menu__item">projects</a></li>
-            <li><a href="" class="menu__item">news</a></li>
-            <li><a href="" class="menu__item">contact</a></li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">about us</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">projects</a>
+            </li>
+            <li class="menu__item">
+              <a href="#news" class="menu__link">news</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">contact</a>
+            </li>
           </ul>
+          <button class="hamburger">
+            <svg class="logo-item" width="42px" height="42px">
+              <use xlink:href="./img/svg/symbol-defs.svg#icon-menu-down" />
+            </svg>
+            <svg class="logo-item" width="42px" height="42px">
+              <use xlink:href="./img/svg/symbol-defs.svg#icon-menu-up" />
+            </svg>
+          </button>
         </nav>
 
         <ul class="socials header__socials">
           <li>
-            <a href="" class="socials__item"
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="socials__item"
               ><img src="./img/svg/facebook.svg" alt="facebook logo"
             /></a>
           </li>
           <li>
-            <a href="" class="socials__item"
+            <a href="https://twitter.com/" target="_blank" class="socials__item"
               ><img src="./img/svg/twitter.svg" alt="twitter logo"
             /></a>
           </li>
           <li>
-            <a href="" class="socials__item"
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="socials__item"
               ><img src="./img/svg/instagram.svg" alt="instagram logo"
             /></a>
           </li>
         </ul>
       </div>
 
+      <!-- header slider -->
       <section class="header_slider"></section>
     </header>
 
@@ -106,7 +130,7 @@
       <section class="projects"></section>
 
       <!-- news -->
-      <section class="news">
+      <section class="news" id="news">
         <div class="news__container">
           <img class="news__line" src="./img/svg/line_white.svg" alt="line" />
 
@@ -126,9 +150,42 @@
                 Free directories: directories are perfect for customers that are
                 searching for...
               </p>
-              <div class="person slide__person">
+              <div class="person slide__person-first">
                 <p class="person__name">Alja Brun</p>
                 <p class="person__date">20 Jan 2020</p>
+              </div>
+            </li>
+
+            <li class="slide slider__slide">
+              <img
+                class="slide__image"
+                src="./img/news_dominic_image.png"
+                alt="architecture"
+              />
+              <h1 class="slide__title">effective advertising pointers.</h1>
+              <p class="slide__text">
+                Having a home based business is a wonderful asset to your
+                life...
+              </p>
+              <div class="person slide__person-second">
+                <p class="person__name">Dominic Freeman</p>
+                <p class="person__date">13 Dec 2019</p>
+              </div>
+            </li>
+
+            <li class="slide slider__slide">
+              <img
+                class="slide__image"
+                src="./img/news_alice_image.png"
+                alt="architecture"
+              />
+              <h1 class="slide__title">hypnotize yourself into the ghost.</h1>
+              <p class="slide__text">
+                There are many things that are important to catalog design...
+              </p>
+              <div class="person slide__person-third">
+                <p class="person__name">Alice Ward</p>
+                <p class="person__date">30 Nov 2019</p>
               </div>
             </li>
 
@@ -145,7 +202,7 @@
                 Free directories: directories are perfect for customers that are
                 searching for...
               </p>
-              <div class="person slide__person">
+              <div class="person slide__person-first">
                 <p class="person__name">Alja Brun</p>
                 <p class="person__date">20 Jan 2020</p>
               </div>
@@ -154,57 +211,17 @@
             <li class="slide slider__slide">
               <img
                 class="slide__image"
-                src="./img/news_alja_image.png"
+                src="./img/news_dominic_image.png"
                 alt="architecture"
               />
-              <h1 class="slide__title">
-                see the unmatched beauty of the great.
-              </h1>
+              <h1 class="slide__title">effective advertising pointers.</h1>
               <p class="slide__text">
-                Free directories: directories are perfect for customers that are
-                searching for...
+                Having a home based business is a wonderful asset to your
+                life...
               </p>
-              <div class="person slide__person">
-                <p class="person__name">Alja Brun</p>
-                <p class="person__date">20 Jan 2020</p>
-              </div>
-            </li>
-
-            <li class="slide slider__slide">
-              <img
-                class="slide__image"
-                src="./img/news_alja_image.png"
-                alt="architecture"
-              />
-              <h1 class="slide__title">
-                see the unmatched beauty of the great.
-              </h1>
-              <p class="slide__text">
-                Free directories: directories are perfect for customers that are
-                searching for...
-              </p>
-              <div class="person slide__person">
-                <p class="person__name">Alja Brun</p>
-                <p class="person__date">20 Jan 2020</p>
-              </div>
-            </li>
-
-            <li class="slide slider__slide">
-              <img
-                class="slide__image"
-                src="./img/news_alja_image.png"
-                alt="architecture"
-              />
-              <h1 class="slide__title">
-                see the unmatched beauty of the great.
-              </h1>
-              <p class="slide__text">
-                Free directories: directories are perfect for customers that are
-                searching for...
-              </p>
-              <div class="person slide__person">
-                <p class="person__name">Alja Brun</p>
-                <p class="person__date">20 Jan 2020</p>
+              <div class="person slide__person-second">
+                <p class="person__name">Dominic Freeman</p>
+                <p class="person__date">13 Dec 2019</p>
               </div>
             </li>
           </ul>

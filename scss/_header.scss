@@ -1,5 +1,137 @@
 .header {
   width: 100%;
   min-height: 50rem;
-  background: url(../img/header_background.png) center center / cover no-repeat;
+  background: url(../img/header_background.png) center center / 100% 100%
+    no-repeat;
+}
+
+.header__container {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  padding: 0 10% 0 5%;
+  height: 4rem;
+  background: url(../img/header_menu_background.png) center center / 100% 100%
+    no-repeat;
+  opacity: 0.9;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 10;
+}
+
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4.375rem;
+  margin: 0;
+
+  .menu__item {
+    // margin-left: 5rem;
+
+    .menu__link {
+      @extend %nav_menu;
+      padding: 0 0 0 1.2rem;
+      transition: ease-in-out 0.2s;
+      background: url(../img/svg/dot_transparent.svg) left center / 0.5rem
+        no-repeat;
+
+      &:hover {
+        background: url(../img/svg/dot_white.svg) left center / 0.5rem no-repeat;
+      }
+
+      &:focus {
+        background: url(../img/svg/dot_white.svg) left center / 0.5rem no-repeat;
+      }
+    }
+  }
+}
+
+.hamburger {
+  border: none;
+  background-color: transparent;
+  display: none;
+
+  .logo-item:nth-child(2) {
+    display: none;
+  }
+}
+
+.header__socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+  margin: 0;
+
+  & li {
+    transition: ease-in-out 0.2s;
+  }
+
+  & li:hover {
+    scale: 1.1;
+  }
+
+  & li:focus {
+    scale: 1.1;
+  }
+
+  & li:active {
+    scale: 1.1;
+  }
+}
+
+// mobile
+@media only screen and (max-width: 1200px) {
+  .header__menu {
+    position: fixed;
+    left: -100%;
+    top: 4rem;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    overflow: auto;
+    background: rgba(85, 183, 255, 1) url(../img/svg/burger_background.svg)
+      center bottom / contain no-repeat;
+  }
+
+  .header__menu.active {
+    left: 0;
+
+    .menu__item {
+      margin: 2rem 0 0 0;
+    }
+  }
+
+  .hamburger {
+    display: block;
+    svg {
+      fill: #2c4058;
+    }
+  }
+
+  .hamburger.active .logo-item:nth-child(1) {
+    display: none;
+  }
+  .hamburger.active .logo-item:nth-child(2) {
+    display: block;
+    svg {
+      fill: #2c4058;
+    }
+  }
+
+  .header__socials {
+    display: none;
+  }
 }

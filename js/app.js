@@ -1,3 +1,17 @@
+/* header menu */
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".header__menu");
+const body = document.querySelector("body");
+
+hamburger.addEventListener("click", createMobileMenu);
+navMenu.addEventListener("click", createMobileMenu);
+
+function createMobileMenu() {
+  body.classList.toggle("overflow");
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+}
+
 /* gallery */
 baguetteBox.run(".tz-gallery");
 

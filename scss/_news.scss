@@ -2,7 +2,8 @@
   margin: 9.375rem 0 0 0;
   padding: 7.5rem 0 0 0;
   width: 100%;
-  background: url(../img/news_background.png) center center / cover no-repeat;
+  background: url(../img/news_background.png) center center / 100% 100%
+    no-repeat;
 
   &__container {
     display: flex;
@@ -38,10 +39,9 @@
       padding: 0 1.25rem;
     }
 
-    &__person {
+    .person {
       margin: 0 0 0 1.25rem;
       padding: 2rem 0 1rem 5rem;
-      background: url(../img/news_alja_photo.png) left center / 15% no-repeat;
 
       .person__name {
         @extend %news_slide_name;
@@ -50,6 +50,18 @@
       .person__date {
         @extend %news_slide_date;
       }
+    }
+
+    &__person-first {
+      background: url(../img/news_alja_photo.png) left center / 15% no-repeat;
+    }
+
+    &__person-second {
+      background: url(../img/news_dominic_photo.png) left center / 15% no-repeat;
+    }
+
+    &__person-third {
+      background: url(../img/news_alice_photo.png) left center / 15% no-repeat;
     }
   }
 
@@ -67,7 +79,7 @@
 
   .slick-arrow {
     position: absolute;
-    top: 44%;
+    top: 42%;
   }
   .slick-prev {
     left: -5%;
