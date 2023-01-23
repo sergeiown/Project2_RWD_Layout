@@ -3,13 +3,34 @@
   width: 100%;
   min-height: 45.125rem;
 
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__line {
+    width: 6.25rem;
+  }
+
+  &__title {
+    @extend %gallery_title;
+  }
+
+  &__button {
+    @extend %button;
+    width: 11.875rem;
+    height: 3.125rem;
+  }
+
   .tz-gallery {
     padding: 5.625rem 13.438rem 3.75rem 13.438rem;
   }
 
   /* Override bootstrap column paddings */
   .tz-gallery .row > div {
-    padding: 2px;
+    padding: 0.5rem;
   }
 
   .tz-gallery .lightbox img {
@@ -22,11 +43,12 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -13px;
-    margin-left: -13px;
+    transform: translate(-50%, -50%);
+    // margin-top: -0.1rem;
+    // margin-left: -0.1rem;
     opacity: 0;
     color: #fff;
-    font-size: 26px;
+    font-size: 3rem;
     font-family: "Glyphicons Halflings";
     content: "\e003";
     pointer-events: none;
@@ -56,8 +78,8 @@
   }
 
   @media (max-width: 768px) {
-    body {
-      padding: 0;
+    .tz-gallery {
+      padding: 1.5rem;
     }
   }
 }

@@ -1,6 +1,7 @@
 html {
   @extend %font_family;
   scroll-behavior: smooth;
+  font-size: 100%;
 
   body {
     user-select: none;
