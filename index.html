@@ -26,14 +26,50 @@
 
     <link rel="stylesheet" href="./css/index.css" />
 
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    ></script>
+
     <script defer src="./js/app.js"></script>
 
     <title>Monticello</title>
   </head>
+
   <body>
     <header class="header">
-      <nav class="nav"></nav>
-      <section class="header__slider"></section>
+      <div class="container header__container">
+        <img class="header__logo" src="./img/svg/logo.svg" alt="logo" />
+
+        <nav class="header__nav">
+          <ul class="menu header__menu">
+            <li><a href="" class="menu__item">about us</a></li>
+            <li><a href="" class="menu__item">projects</a></li>
+            <li><a href="" class="menu__item">news</a></li>
+            <li><a href="" class="menu__item">contact</a></li>
+          </ul>
+        </nav>
+
+        <ul class="socials header__socials">
+          <li>
+            <a href="" class="socials__item"
+              ><img src="./img/svg/facebook.svg" alt="facebook logo"
+            /></a>
+          </li>
+          <li>
+            <a href="" class="socials__item"
+              ><img src="./img/svg/twitter.svg" alt="twitter logo"
+            /></a>
+          </li>
+          <li>
+            <a href="" class="socials__item"
+              ><img src="./img/svg/instagram.svg" alt="instagram logo"
+            /></a>
+          </li>
+        </ul>
+      </div>
+
+      <section class="header_slider"></section>
     </header>
 
     <main class="main">
