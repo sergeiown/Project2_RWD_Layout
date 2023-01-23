@@ -24,11 +24,20 @@
     />
     <link rel="manifest" href="./favicon/site.webmanifest" />
 
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css"
+    />
+
     <link rel="stylesheet" href="./css/index.css" />
 
     <script
       defer
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"
     ></script>
 
     <script defer src="./js/app.js"></script>
@@ -77,7 +86,39 @@
 
       <section class="news"></section>
 
-      <section class="gallery"></section>
+      <section class="gallery">
+        <div class="gallery-container">
+          <div class="tz-gallery">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <a class="lightbox" href="./img/gallery_first.png">
+                  <img src="./img/gallery_first.png" alt="Bridge" />
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <a class="lightbox" href="./img/gallery_second.png">
+                  <img src="./img/gallery_second.png" alt="Park" />
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <a class="lightbox" href="./img/gallery_third.png">
+                  <img src="./img/gallery_third.png" alt="Tunnel" />
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <a class="lightbox" href="./img/gallery_fourth.png">
+                  <img src="./img/gallery_fourth.png" alt="Traffic" />
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <a class="lightbox" href="./img/gallery_fifth.png">
+                  <img src="./img/gallery_fifth.png" alt="Coast" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section class="contacts">
         <iframe
