@@ -1,6 +1,136 @@
 .news {
   margin: 9.375rem 0 0 0;
+  padding: 7.5rem 0 0 0;
   width: 100%;
-  min-height: 61.125rem;
   background: url(../img/news_background.png) center center / cover no-repeat;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__line {
+    width: 6.25rem;
+  }
+
+  &__title {
+    @extend %news_title;
+  }
+
+  .slide {
+    background: #ffffff;
+    width: 23.125rem;
+    margin: 5.625rem 0.9rem 10.625rem 0.9rem;
+
+    &__image {
+      width: 100%;
+    }
+
+    &__title {
+      @extend %news_slide_title;
+      padding: 0 1.25rem;
+    }
+
+    &__text {
+      @extend %news_slide_paragraph;
+      padding: 0 1.25rem;
+    }
+
+    &__person {
+      margin: 0 0 0 1.25rem;
+      padding: 2rem 0 1rem 5rem;
+      background: url(../img/news_alja_photo.png) left center / 15% no-repeat;
+
+      .person__name {
+        @extend %news_slide_name;
+      }
+
+      .person__date {
+        @extend %news_slide_date;
+      }
+    }
+  }
+
+  // slider
+
+  .news__slider {
+    width: 80%;
+    // height: fit-content;
+    // margin: auto;
+  }
+
+  .slider {
+    position: relative;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+  }
+  .slick-prev {
+    left: -4rem;
+    background: url(../img/svg/arrow_left.svg) 0 0 no-repeat;
+    width: 40px;
+    height: 40px;
+    border: none;
+    font-size: 0;
+    @media screen and (max-width: 1200px) {
+      opacity: 0;
+      left: 0;
+    }
+  }
+
+  .slick-next {
+    right: -4rem;
+    background: url(../img/svg/arrow_right.svg) 0 0 no-repeat;
+    width: 40px;
+    height: 40px;
+    border: none;
+    font-size: 0;
+    @media screen and (max-width: 1295px) {
+      opacity: 0;
+      right: 0;
+    }
+  }
+  .slick-list {
+    overflow: hidden;
+  }
+  .slider {
+    min-width: 0;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 15%;
+    left: 40%;
+    li {
+      list-style: none;
+      margin: 0 1rem;
+      @media screen and (max-width: 1000px) {
+        margin: 0 0.5rem;
+      }
+    }
+    button {
+      font-size: 0;
+      width: 0.5rem;
+      height: 0.5rem;
+      background: url(../img/svg/dot_transparent.svg) center center / contain
+        no-repeat;
+      border: none;
+    }
+  }
+  .slick-active {
+    button {
+      background: url(../img/svg/dot_white.svg) center center / contain
+        no-repeat;
+    }
+  }
+  .slick-track {
+    display: flex;
+  }
 }

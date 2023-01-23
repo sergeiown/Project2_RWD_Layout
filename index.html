@@ -10,6 +10,7 @@
       sizes="180x180"
       href="./favicon/apple-touch-icon.png"
     />
+
     <link
       rel="icon"
       type="image/png"
@@ -28,9 +29,16 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
 
     <link rel="stylesheet" href="./css/index.css" />
@@ -38,6 +46,18 @@
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"
+    ></script>
+
+    <script defer src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <script
+      defer
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
 
     <script defer src="./js/app.js"></script>
@@ -86,7 +106,110 @@
       <section class="projects"></section>
 
       <!-- news -->
-      <section class="news"></section>
+      <section class="news">
+        <div class="news__container">
+          <img class="news__line" src="./img/svg/line_white.svg" alt="line" />
+
+          <h1 class="news__title">latest news</h1>
+
+          <ul class="sliderbox news__slider">
+            <li class="slide slider__slide">
+              <img
+                class="slide__image"
+                src="./img/news_alja_image.png"
+                alt="architecture"
+              />
+              <h1 class="slide__title">
+                see the unmatched beauty of the great.
+              </h1>
+              <p class="slide__text">
+                Free directories: directories are perfect for customers that are
+                searching for...
+              </p>
+              <div class="person slide__person">
+                <p class="person__name">Alja Brun</p>
+                <p class="person__date">20 Jan 2020</p>
+              </div>
+            </li>
+
+            <li class="slide slider__slide">
+              <img
+                class="slide__image"
+                src="./img/news_alja_image.png"
+                alt="architecture"
+              />
+              <h1 class="slide__title">
+                see the unmatched beauty of the great.
+              </h1>
+              <p class="slide__text">
+                Free directories: directories are perfect for customers that are
+                searching for...
+              </p>
+              <div class="person slide__person">
+                <p class="person__name">Alja Brun</p>
+                <p class="person__date">20 Jan 2020</p>
+              </div>
+            </li>
+
+            <li class="slide slider__slide">
+              <img
+                class="slide__image"
+                src="./img/news_alja_image.png"
+                alt="architecture"
+              />
+              <h1 class="slide__title">
+                see the unmatched beauty of the great.
+              </h1>
+              <p class="slide__text">
+                Free directories: directories are perfect for customers that are
+                searching for...
+              </p>
+              <div class="person slide__person">
+                <p class="person__name">Alja Brun</p>
+                <p class="person__date">20 Jan 2020</p>
+              </div>
+            </li>
+
+            <li class="slide slider__slide">
+              <img
+                class="slide__image"
+                src="./img/news_alja_image.png"
+                alt="architecture"
+              />
+              <h1 class="slide__title">
+                see the unmatched beauty of the great.
+              </h1>
+              <p class="slide__text">
+                Free directories: directories are perfect for customers that are
+                searching for...
+              </p>
+              <div class="person slide__person">
+                <p class="person__name">Alja Brun</p>
+                <p class="person__date">20 Jan 2020</p>
+              </div>
+            </li>
+
+            <li class="slide slider__slide">
+              <img
+                class="slide__image"
+                src="./img/news_alja_image.png"
+                alt="architecture"
+              />
+              <h1 class="slide__title">
+                see the unmatched beauty of the great.
+              </h1>
+              <p class="slide__text">
+                Free directories: directories are perfect for customers that are
+                searching for...
+              </p>
+              <div class="person slide__person">
+                <p class="person__name">Alja Brun</p>
+                <p class="person__date">20 Jan 2020</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <!-- gallery -->
       <section class="gallery">
@@ -99,27 +222,27 @@
             <div class="row">
               <div class="col-sm-12 col-md-6">
                 <a class="lightbox" href="./img/gallery_first.png">
-                  <img src="./img/gallery_first.png" alt="Bridge" />
+                  <img src="./img/gallery_first.png" alt="Building" />
                 </a>
               </div>
               <div class="col-sm-6 col-md-3">
                 <a class="lightbox" href="./img/gallery_second.png">
-                  <img src="./img/gallery_second.png" alt="Park" />
+                  <img src="./img/gallery_second.png" alt="Building" />
                 </a>
               </div>
               <div class="col-sm-6 col-md-3">
                 <a class="lightbox" href="./img/gallery_third.png">
-                  <img src="./img/gallery_third.png" alt="Tunnel" />
+                  <img src="./img/gallery_third.png" alt="Building" />
                 </a>
               </div>
               <div class="col-sm-6 col-md-3">
                 <a class="lightbox" href="./img/gallery_fourth.png">
-                  <img src="./img/gallery_fourth.png" alt="Traffic" />
+                  <img src="./img/gallery_fourth.png" alt="Building" />
                 </a>
               </div>
               <div class="col-sm-6 col-md-3">
                 <a class="lightbox" href="./img/gallery_fifth.png">
-                  <img src="./img/gallery_fifth.png" alt="Coast" />
+                  <img src="./img/gallery_fifth.png" alt="Building" />
                 </a>
               </div>
             </div>
