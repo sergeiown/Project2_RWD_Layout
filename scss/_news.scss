@@ -88,9 +88,23 @@
     height: 40px;
     border: none;
     font-size: 0;
+    transition: ease-in-out 0.2s;
+
     @media screen and (max-width: 1200px) {
       opacity: 0;
       left: 0;
+    }
+
+    &:hover {
+      scale: 1.1;
+    }
+
+    &:focus {
+      scale: 1.1;
+    }
+
+    &:active {
+      scale: 1.2;
     }
   }
 
@@ -101,11 +115,26 @@
     height: 40px;
     border: none;
     font-size: 0;
-    @media screen and (max-width: 1295px) {
+    transition: ease-in-out 0.2s;
+
+    @media screen and (max-width: 1200px) {
       opacity: 0;
       right: 0;
     }
+
+    &:hover {
+      scale: 1.1;
+    }
+
+    &:focus {
+      scale: 1.1;
+    }
+
+    &:active {
+      scale: 1.2;
+    }
   }
+
   .slick-list {
     overflow: hidden;
   }
