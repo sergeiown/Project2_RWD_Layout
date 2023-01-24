@@ -1,5 +1,14 @@
 .projects {
   margin: 6.25rem 0 0 0;
+  padding: 7.5rem 0 0 0;
   width: 100%;
   min-height: 84.25rem;
+
+  &__line {
+    width: 6.25rem;
+  }
+
+  &__title {
+    @extend %project_title;
+  }
 }
