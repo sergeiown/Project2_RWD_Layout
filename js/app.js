@@ -4,12 +4,23 @@ const navMenu = document.querySelector(".header__menu");
 const body = document.querySelector("body");
 
 hamburger.addEventListener("click", createMobileMenu);
-navMenu.addEventListener("click", createMobileMenu);
+navMenu.addEventListener("click", closeMobileMenu);
 
 function createMobileMenu() {
-  body.classList.toggle("overflow");
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
+
+  if (hamburger.classList.contains("active")) {
+    body.classList.add("overflow");
+  } else {
+    body.classList.remove("overflow");
+  }
+}
+
+function closeMobileMenu() {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+  body.classList.remove("overflow");
 }
 
 /* gallery */
