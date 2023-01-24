@@ -86,3 +86,30 @@ $(".news__slider").slick({
     },
   ],
 });
+
+/* form validation */
+const nameInput = document.querySelector('input[name="name"]');
+const emailInput = document.querySelector('input[name="email"]');
+const submitButton = document.querySelector('input[name="button"]');
+const nameRegex = /^[a-zA-Z ]+$/;
+const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+submitButton.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  let isValid = true;
+
+  if (!nameRegex.test(nameInput.value)) {
+    isValid = false;
+  }
+
+  if (!emailRegex.test(emailInput.value)) {
+    isValid = false;
+  }
+
+  if (isValid) {
+    alert("Your data is correct and has been accepted!");
+  } else {
+    alert("Please fill out all required fields correctly.");
+  }
+});
