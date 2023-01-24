@@ -3,6 +3,12 @@
   padding: 7.5rem 0 0 0;
   width: 100%;
   min-height: 84.25rem;
+  text-align: center;
+
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
 
   &__line {
     width: 6.25rem;
@@ -13,25 +19,45 @@
   }
 
   .project {
-    padding: 0 13rem 0 0;
+    padding: 0 15% 0 0;
     display: flex;
     flex-wrap: nowrap;
+    height: 34vw;
+    margin: 5.625rem 0 0 0;
 
-    height: 33rem;
-    border: 1px solid #000;
-
-    &__image {
+    .project__image {
       flex-basis: 60%;
-      border: 1px solid #000;
+      justify-self: left;
+      background-image: url(../img/projects_trade_center.png),
+        url(../img/projects_trade_center_background.jpg);
+      background-position: 100% 100%, 0% 0%;
+      background-size: 80% 85%, 80% 85%;
+      background-repeat: no-repeat, no-repeat;
     }
 
-    &__info {
+    .project__info {
+      display: flex;
       flex-basis: 40%;
-      border: 1px solid #000;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
     }
   }
 
   .project:last-child {
-    padding: 0 0 0 13rem;
+    padding: 0 0 0 15%;
+
+    .project__image {
+      flex-basis: 60%;
+      background-image: url(../img/projects_commerce_centre.png),
+        url(../img/projects_commerce_centre_background.jpg);
+      background-position: 0% 100%, 100% 0%;
+      background-size: 80% 85%, 80% 85%;
+      background-repeat: no-repeat, no-repeat;
+    }
+
+    .project__info {
+      flex-basis: 40%;
+    }
   }
 }
