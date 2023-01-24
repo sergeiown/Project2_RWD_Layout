@@ -23,6 +23,32 @@ function closeMobileMenu() {
   body.classList.remove("overflow");
 }
 
+/* header slider */
+$(document).ready(function () {
+  $(".header__conveyor").slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    speed: 1000,
+    easing: "ease",
+    autoplay: true,
+    autoplaySpeed: 6000,
+    pauseOnFocus: true,
+    pauseOnHover: true,
+    pauseOnDotsHover: true,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          dots: false,
+        },
+      },
+    ],
+  });
+});
+
 /* gallery */
 baguetteBox.run(".tz-gallery");
 
