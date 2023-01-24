@@ -23,6 +23,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    box-shadow: 0.1rem 0.1rem 0.5rem #55b7ff;
 
     &__line {
       max-width: 6.25rem;
