@@ -22,6 +22,16 @@
     @extend %button;
     width: 11.875rem;
     height: 3.125rem;
+    border: 1px solid #2c4058;
+    transition: ease-in-out 0.2s;
+
+    &:hover,
+    &:focus,
+    &:active {
+      @extend %button_hover;
+      border: 1px solid #ffffff;
+      background: #55b7ff;
+    }
   }
 
   .tz-gallery {
