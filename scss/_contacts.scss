@@ -119,12 +119,22 @@
         position: absolute;
         bottom: -100%;
         left: 0%;
+
+        @media only screen and (max-width: 1200px) {
+          bottom: -100%;
+          left: 10%;
+        }
       }
 
       .bottom__copyright {
         position: absolute;
         bottom: -150%;
         left: 0%;
+
+        @media only screen and (max-width: 1200px) {
+          bottom: -150%;
+          left: 10%;
+        }
       }
 
       .bottom__socials {
@@ -156,7 +166,7 @@
 
         @media only screen and (max-width: 1200px) {
           bottom: -240%;
-          left: 0%;
+          left: 10%;
         }
       }
     }
