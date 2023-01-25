@@ -91,6 +91,7 @@
         cursor: pointer;
 
         @extend %form_and_button;
+        text-transform: uppercase;
         width: 8.75rem;
         height: 3.125rem;
         background: #ffffff;

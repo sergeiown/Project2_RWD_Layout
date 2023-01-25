@@ -148,7 +148,7 @@
   .hamburger {
     display: block;
     svg {
-      fill: #2c4058;
+      fill: rgba($color: #2c4058, $alpha: 0.7);
     }
   }
 
@@ -158,7 +158,7 @@
   .hamburger.active .logo-item:nth-child(2) {
     display: block;
     svg {
-      fill: #2c4058;
+      fill: rgba($color: #2c4058, $alpha: 0.7);
     }
   }
 
