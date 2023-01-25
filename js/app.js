@@ -91,7 +91,7 @@ $(".news__slider").slick({
 const nameInput = document.querySelector('input[name="name"]');
 const emailInput = document.querySelector('input[name="email"]');
 const submitButton = document.querySelector('input[name="button"]');
-const nameRegex = /^[a-zA-Z ]+$/;
+const nameRegex = /^[a-zA-Zа-яА-ЯїЇіІєЄ ]+$/;
 const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
 submitButton.addEventListener("click", (event) => {
