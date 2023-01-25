@@ -87,6 +87,8 @@
         @extend %button;
         width: 11.875rem;
         height: 3.125rem;
+        min-width: 11.875rem;
+        min-height: 3.125rem;
         margin: 2rem 0 3rem 0;
         border: 1px solid #2c4058;
         transition: ease-in-out 0.2s;
@@ -176,6 +178,8 @@
         @extend %button;
         width: 11.875rem;
         height: 3.125rem;
+        min-width: 11.875rem;
+        min-height: 3.125rem;
         margin: 2rem 0 3rem 0;
         border: 1px solid #2c4058;
         transition: ease-in-out 0.2s;
