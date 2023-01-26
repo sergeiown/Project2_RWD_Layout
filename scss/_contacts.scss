@@ -94,8 +94,7 @@
 
       & :nth-child(3) {
         align-self: end;
-        cursor: pointer;
-
+        z-index: 11;
         @extend %form_and_button;
         text-transform: uppercase;
         width: 8.75rem;
@@ -104,8 +103,7 @@
         border: 1px solid #2c4058;
         transition: ease-in-out 0.2s;
 
-        &:hover,
-        &:active {
+        &:hover {
           @extend %form_button_hover;
           border: 1px solid #ffffff;
           background: #55b7ff;
