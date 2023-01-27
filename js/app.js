@@ -46,7 +46,7 @@ function showButton() {
   }
 
   window.onresize = function () {
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 600) {
       /* not used (visibility = "visible"/"invisible") due to overwriting the property by the previous function */
       button.style.display = "none";
     } else {
@@ -103,6 +103,7 @@ $(".news__slider").slick({
       breakpoint: 1200,
       settings: {
         arrows: false,
+        // dots: false,
         slidesToShow: 2,
         slidesToScroll: 1,
       },
