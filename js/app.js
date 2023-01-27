@@ -23,6 +23,30 @@ function closeMobileMenu() {
   body.classList.remove("overflow");
 }
 
+/* return button */
+const button = document.querySelector(".main__button");
+let timeout;
+
+window.onscroll = function () {
+  if (window.pageYOffset > 650) {
+    clearTimeout(timeout);
+    button.style.visibility = "visible";
+    timeout = setTimeout(() => {
+      button.style.visibility = "hidden";
+    }, 3000);
+  } else {
+    button.style.visibility = "hidden";
+  }
+
+  // window.onmousemove = function () {
+  //   clearTimeout(timeout);
+  //   button.style.visibility = "visible";
+  //   timeout = setTimeout(() => {
+  //     button.style.visibility = "hidden";
+  //   }, 3000);
+  // };
+};
+
 /* header slider */
 $(document).ready(function () {
   $(".header__conveyor").slick({
