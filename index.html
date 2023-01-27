@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"
+    ></script>
+
+    <script defer src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <script
+      defer
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script defer src="./js/app.js"></script>
+
+    <title>Monticello</title>
+  </head>
+
+  <body>
+    <header class="header" id="header">
+      <!-- menu -->
+      <div class="header__container">
+        <img class="header__logo" src="./img/svg/logo.svg" alt="logo" />
+
+        <nav class="header__navbar">
+          <ul class="menu header__menu">
+            <li class="menu__item">
+              <a href="#header" class="menu__link">about us</a>
+            </li>
+            <li class="menu__item">
+              <a href="#projects" class="menu__link">projects</a>
+            </li>
+            <li class="menu__item">
+              <a href="#news" class="menu__link">news</a>
+            </li>
+            <li class="menu__item">
+              <a href="#contacts" class="menu__link">contact</a>
+            </li>
+          </ul>
+          <button class="hamburger">
+            <svg class="logo-item" width="42px" height="42px">
+              <use xlink:href="./img/svg/symbol-defs.svg#icon-menu-down" />
+            </svg>
+            <svg class="logo-item" width="42px" height="42px">
+              <use xlink:href="./img/svg/symbol-defs.svg#icon-menu-up" />
+            </svg>
+          </button>
+        </nav>
+
+        <ul class="socials header__socials">
+          <li>
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="socials__item"
+              ><img src="./img/svg/facebook.svg" alt="facebook logo"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/" target="_blank" class="socials__item"
+              ><img src="./img/svg/twitter.svg" alt="twitter logo"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="socials__item"
+              ><img src="./img/svg/instagram.svg" alt="instagram logo"
+            /></a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- header slider -->
+      <section class="header__heading">
+        <ul class="conveyor header__conveyor">
+          <li class="title conveyor__title">
+            <h1 class="title__big">simple & modern</h1>
+            <h2 class="title__small">we make the world beautiful everyday</h2>
+          </li>
+          <li class="title conveyor__title">
+            <h1 class="title__big">sleek elegance</h1>
+            <h2 class="title__small">we strive to beautify the world daily</h2>
+          </li>
+          <li class="title conveyor__title">
+            <h1 class="title__big">minimalism</h1>
+            <h2 class="title__small">
+              our mission is to make every day a little more beautiful
+            </h2>
+          </li>
+          <li class="title conveyor__title">
+            <h1 class="title__big">simplicity</h1>
+            <h2 class="title__small">
+              we believe in creating beauty in the world every single day
+            </h2>
+          </li>
+          <li class="title conveyor__title">
+            <h1 class="title__big">modernity</h1>
+            <h2 class="title__small">
+              transforming the world, one day at a time through beauty
+            </h2>
+          </li>
+        </ul>
+      </section>
+
+      <a class="header__button" href="#projects"></a>
+    </header>
+
+    <main class="main">
+      <!-- projects -->
+      <section class="projects" id="projects">
+        <img class="projects__line" src="./img/svg/line_dark.svg" alt="line" />
+        <h1 class="projects__title">what we do</h1>
+
+        <div class="project projects__project">
+          <div class="project__image"></div>
+
+          <div class="info project__info">
+            <h2 class="info__subtitle">one world</h2>
+            <h1 class="info__title">trade center</h1>
+            <p class="info__paragraph">
+              Increasing prosperity in our lives can be accomplished by having
+              the right frame of mind. The truth is, our thoughts are very
+              powerful.
+            </p>
+            <button class="info__button">more details</button>
+            <img
+              class="info__addition"
+              src="./img/svg/new_york.svg"
+              alt="geo marker"
+            />
+          </div>
+        </div>
+
+        <div class="project projects__project">
+          <div class="project__info">
+            <h2 class="info__subtitle">international</h2>
+            <h1 class="info__title">commerce centre</h1>
+            <p class="info__paragraph">
+              Successful businesses have many things in common, today we’ll look
+              at the big ‘R’ of recognition and how a digital advertising
+              network may help.
+            </p>
+            <button class="info__button">more details</button>
+            <img
+              class="info__addition"
+              src="./img/svg/hong_kong.svg"
+              alt="geo marker"
+            />
+          </div>
+
+          <div class="project__image"></div>
+        </div>
+      </section>
+
+      <!-- news -->
+      <section class="news" id="news">
+        <div class="news__container">
+          <img class="news__line" src="./img/svg/line_white.svg" alt="line" />
+
+          <h1 class="news__title">latest news</h1>
+
+          <ul class="slider news__slider">
+            <li class="slide slider__slide">
+              <img
+                class="slide__image"
+                src="./img/news_alja_image.png"
+                alt="architecture"
+              />
+              <h1 class="slide__title">
+                see the unmatched beauty of the great.
+              </h1>
+              <p class="slide__text">
+                Free directories: directories are perfect for customers that are
+                searching for...
+              </p>
+              <div class="person slide__person-first">
+                <p class="person__name">Alja Brun</p>
+                <p class="person__date">20 Jan 2020</p>
+              </div>
+            </li>
+
+            <li class="slide slider__slide">
+              <img
+                class="slide__image"
+                src="./img/news_dominic_image.png"
+                alt="architecture"
+              />
+              <h1 class="slide__title">effective advertising pointers.</h1>
+              <p class="slide__text">
+                Having a home based business is a wonderful asset to your
+                life...
+              </p>
+              <div class="person slide__person-second">
+                <p class="person__name">Dominic Freeman</p>
+                <p class="person__date">13 Dec 2019</p>
+              </div>
+            </li>
+
+            <li class="slide slider__slide">
+              <img
+                class="slide__image"
+                src="./img/news_alice_image.png"
+                alt="architecture"
+              />
+              <h1 class="slide__title">hypnotize yourself into the ghost.</h1>
+              <p class="slide__text">
+                There are many things that are important to catalog design...
+              </p>
+              <div class="person slide__person-third">
+                <p class="person__name">Alice Ward</p>
+                <p class="person__date">30 Nov 2019</p>
+              </div>
+            </li>
+
+            <li class="slide slider__slide">
+              <img
+                class="slide__image"
+                src="./img/news_alja_image.png"
+                alt="architecture"
+              />
+              <h1 class="slide__title">
+                see the unmatched beauty of the great.
+              </h1>
+              <p class="slide__text">
+                Free directories: directories are perfect for customers that are
+                searching for...
+              </p>
+              <div class="person slide__person-first">
+                <p class="person__name">Alja Brun</p>
+                <p class="person__date">20 Jan 2020</p>
+              </div>
+            </li>
+
+            <li class="slide slider__slide">
+              <img
+                class="slide__image"
+                src="./img/news_dominic_image.png"
+                alt="architecture"
+              />
+              <h1 class="slide__title">effective advertising pointers.</h1>
+              <p class="slide__text">
+                Having a home based business is a wonderful asset to your
+                life...
+              </p>
+              <div class="person slide__person-second">
+                <p class="person__name">Dominic Freeman</p>
+                <p class="person__date">13 Dec 2019</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- gallery -->
+      <section class="gallery">
+        <div class="gallery__container">
+          <img class="gallery__line" src="./img/svg/line_dark.svg" alt="line" />
+
+          <h1 class="gallery__title">gallery</h1>
+
+          <div class="tz-gallery">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <a class="lightbox" href="./img/gallery_first.jpg">
+                  <img src="./img/gallery_first.jpg" alt="Building" />
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <a class="lightbox" href="./img/gallery_second.jpg">
+                  <img src="./img/gallery_second.jpg" alt="Building" />
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <a class="lightbox" href="./img/gallery_third.jpg">
+                  <img src="./img/gallery_third.jpg" alt="Building" />
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <a class="lightbox" href="./img/gallery_fourth.jpg">
+                  <img src="./img/gallery_fourth.jpg" alt="Building" />
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <a class="lightbox" href="./img/gallery_fifth.jpg">
+                  <img src="./img/gallery_fifth.jpg" alt="Building" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <button class="gallery__button">see more</button>
+        </div>
+      </section>
+
+      <!-- contacts -->
+      <section class="contacts" id="contacts">
+        <!-- <iframe
+          class="contacts__map"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-74.01981711387636%2C40.703651538425746%2C-74.00189995765687%2C40.71108509968922&amp;layer=mapnik&amp;marker=40.70736842277715%2C-74.0108585357666"
+        ></iframe> -->
+
+        <iframe
+          class="contacts__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.639825328672!2d-73.43308370032325!3d41.12055654366091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e81dc5936d8d03%3A0xed3b2b06bd127c25!2sNolan%20St%20Ext%2C%20Norwalk%2C%20CT%2006850%2C%20USA!5e0!3m2!1sen!2sua!4v1674578994965!5m2!1sen!2sua"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+        <div class="form contacts__form">
+          <img class="form__line" src="./img/svg/line_dark.svg" alt="line" />
+
+          <h1 class="form__title">get in touch</h1>
+
+          <div class="form__address">
+            <img src="./img/svg/address.svg" alt="address" />
+          </div>
+          <div class="form__inputs">
+            <input type="text" name="name" placeholder="name" maxlength="20" />
+            <input
+              type="email"
+              name="email"
+              placeholder="email"
+              maxlength="30"
+            />
+            <input type="submit" name="button" value="submit" />
+          </div>
+
+          <div class="bottom form__bottom">
+            <img
+              class="bottom__logo"
+              src="./img/svg/logo.svg"
+              alt="Monticello"
+            />
+
+            <ul class="socials bottom__socials">
+              <li>
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  class="socials__item"
+                  ><img src="./img/svg/facebook.svg" alt="facebook logo"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/"
+                  target="_blank"
+                  class="socials__item"
+                  ><img src="./img/svg/twitter.svg" alt="twitter logo"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  class="socials__item"
+                  ><img src="./img/svg/instagram.svg" alt="instagram logo"
+                /></a>
+              </li>
+            </ul>
+
+            <img
+              class="bottom__copyright"
+              src="./img/svg/copyrights.svg"
+              alt="copyrights"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- return button -->
+      <a class="main__button" href="#header"></a>
+    </main>
+
+    <!-- simply footer ) -->
+    <footer class="footer"></footer>
+  </body>
+</html>

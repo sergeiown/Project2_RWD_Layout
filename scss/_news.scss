@@ -1,0 +1,178 @@
+.news {
+  margin: 9.375rem 0 0 0;
+  padding: 7.5rem 0 0 0;
+  width: 100vw;
+  background: url(../img/news_background.jpg) center center / 100% 100%
+    no-repeat;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__line {
+    width: 6.25rem;
+  }
+
+  &__title {
+    @extend %news_title;
+  }
+
+  .slide {
+    background: #ffffff;
+    width: 23.125rem;
+    margin: 5.625rem 0.9rem 10.625rem 0.9rem;
+
+    &__image {
+      width: 100%;
+    }
+
+    &__title {
+      @extend %news_slide_title;
+      padding: 1.875rem 1.25rem 0.938rem 1.25rem;
+    }
+
+    &__text {
+      @extend %news_slide_paragraph;
+      padding: 0 1.25rem;
+    }
+
+    .person {
+      margin: 0 0 0 1.25rem;
+      padding: 2rem 0 1rem 5rem;
+
+      .person__name {
+        @extend %news_slide_name;
+      }
+
+      .person__date {
+        @extend %news_slide_date;
+      }
+    }
+
+    &__person-first {
+      background: url(../img/news_alja_photo.png) left center / 15% no-repeat;
+    }
+
+    &__person-second {
+      background: url(../img/news_dominic_photo.png) left center / 15% no-repeat;
+    }
+
+    &__person-third {
+      background: url(../img/news_alice_photo.png) left center / 15% no-repeat;
+    }
+  }
+
+  // slider
+  .news__slider {
+    width: 75rem;
+    @media only screen and (max-width: 1200px) {
+      width: 90%;
+    }
+  }
+
+  .slider {
+    position: relative;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 42%;
+  }
+  .slick-prev {
+    left: -5%;
+    background: url(../img/svg/arrow_left.svg) 0 0 no-repeat;
+    width: 40px;
+    height: 40px;
+    border: none;
+    font-size: 0;
+    transition: ease-in-out 0.2s;
+
+    @media screen and (max-width: 1200px) {
+      opacity: 0;
+      left: 0;
+    }
+
+    &:hover {
+      scale: 1.1;
+    }
+
+    &:focus {
+      scale: 1.1;
+    }
+
+    &:active {
+      scale: 1.2;
+    }
+  }
+
+  .slick-next {
+    right: -5%;
+    background: url(../img/svg/arrow_right.svg) 0 0 no-repeat;
+    width: 40px;
+    height: 40px;
+    border: none;
+    font-size: 0;
+    transition: ease-in-out 0.2s;
+
+    @media screen and (max-width: 1200px) {
+      opacity: 0;
+      right: 0;
+    }
+
+    &:hover {
+      scale: 1.1;
+    }
+
+    &:focus {
+      scale: 1.1;
+    }
+
+    &:active {
+      scale: 1.2;
+    }
+  }
+
+  .slick-list {
+    overflow: hidden;
+  }
+  .slider {
+    min-width: 0;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    li {
+      list-style: none;
+      margin: 0 1rem;
+      @media screen and (max-width: 1000px) {
+        margin: 0 0.5rem;
+      }
+    }
+    button {
+      font-size: 0;
+      width: 0.5rem;
+      height: 0.5rem;
+      background: url(../img/svg/dot_transparent.svg) center center / contain
+        no-repeat;
+      border: none;
+    }
+  }
+  .slick-active {
+    button {
+      background: url(../img/svg/dot_white.svg) center center / contain
+        no-repeat;
+    }
+  }
+  .slick-track {
+    display: flex;
+  }
+}

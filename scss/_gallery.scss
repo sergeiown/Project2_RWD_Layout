@@ -1,0 +1,95 @@
+.gallery {
+  margin: 9.375rem 0 0 0;
+  width: 100vw;
+  min-height: 45.125rem;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__line {
+    width: 6.25rem;
+  }
+
+  &__title {
+    @extend %gallery_title;
+  }
+
+  &__button {
+    @extend %button;
+    width: 11.875rem;
+    height: 3.125rem;
+    border: 1px solid #2c4058;
+    transition: ease-in-out 0.2s;
+
+    &:hover,
+    &:focus,
+    &:active {
+      @extend %button_hover;
+      border: 1px solid #ffffff;
+      background: #55b7ff;
+    }
+  }
+
+  .tz-gallery {
+    padding: 5.625rem 13.438rem 3.75rem 13.438rem;
+  }
+
+  /* Override bootstrap column paddings */
+  .tz-gallery .row > div {
+    padding: 0.5rem;
+  }
+
+  .tz-gallery .lightbox img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+  }
+
+  .tz-gallery .lightbox:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // margin-top: -0.1rem;
+    // margin-left: -0.1rem;
+    opacity: 0;
+    color: #fff;
+    font-size: 3rem;
+    font-family: "Glyphicons Halflings";
+    content: "\e003";
+    pointer-events: none;
+    z-index: 10;
+    transition: 0.4s;
+  }
+
+  .tz-gallery .lightbox:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(85, 183, 255, 0.6);
+    content: "";
+    transition: 0.4s;
+  }
+
+  .tz-gallery .lightbox:hover:after,
+  .tz-gallery .lightbox:hover:before {
+    opacity: 1;
+  }
+
+  .baguetteBox-button {
+    background-color: transparent !important;
+  }
+
+  @media (max-width: 768px) {
+    .tz-gallery {
+      padding: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+html {
+  @extend %font_family;
+  scroll-behavior: smooth;
+  font-size: 100%;
+
+  body {
+    user-select: none;
+    overflow-x: hidden;
+    background: #ffffff;
+
+    // return button
+    .main__button {
+      position: fixed;
+      bottom: 5%;
+      right: 3%;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      color: transparent;
+      border: none;
+      background: rgba($color: #756bf9, $alpha: 0.7)
+        url(../img/svg/arrow_down.svg) center center / 107% no-repeat;
+      box-shadow: 0 0 1rem #756bf9;
+      transform: rotateZ(180deg);
+      transition: ease-in-out 0.2s;
+      visibility: hidden;
+
+      @media only screen and (max-width: 1200px) {
+        bottom: 4vh;
+        right: 3vw;
+      }
+
+      &:hover {
+        scale: 1.1;
+      }
+
+      &:focus {
+        scale: 1.1;
+      }
+
+      &:active {
+        scale: 1.2;
+      }
+    }
+  }
+
+  body.overflow {
+    overflow: hidden;
+  }
+}
