@@ -25,22 +25,25 @@ function closeMobileMenu() {
 
 /* return button */
 const button = document.querySelector(".main__button");
+let initTimeout;
 let timeout;
 
 if ("ontouchstart" in window) {
   /* checking that the browser supports the touchscreen */
-  document.addEventListener("touchmove", showButton, false);
+  window.addEventListener("touchmove", showButton, false);
+  initTimeout = 6000;
 } else {
   window.addEventListener("scroll", showButton, false);
+  initTimeout = 3000;
 }
 
 function showButton() {
-  if (window.pageYOffset > 650) {
+  if (window.pageYOffset > 600) {
     clearTimeout(timeout);
     button.style.visibility = "visible";
     timeout = setTimeout(() => {
       button.style.visibility = "hidden";
-    }, 3000);
+    }, initTimeout);
   } else {
     button.style.visibility = "hidden";
   }

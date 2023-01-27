@@ -196,8 +196,13 @@
 }
 
 .header__conveyor {
-  width: 70%;
+  width: 90%;
+  padding: 0 5rem;
   height: fit-content;
+
+  @media only screen and (max-width: 1200px) {
+    padding: 0 1rem;
+  }
 
   .title__big {
     @extend %header_slide_title;
@@ -228,12 +233,8 @@
 .slick-dots {
   position: absolute;
   top: 0%;
-  left: 110%;
+  left: 100%;
   transform: rotate(0deg);
-
-  @media screen and (max-width: 1200px) {
-    left: 100%;
-  }
 
   li {
     list-style: none;
