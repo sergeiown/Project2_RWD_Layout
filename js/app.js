@@ -27,7 +27,14 @@ function closeMobileMenu() {
 const button = document.querySelector(".main__button");
 let timeout;
 
-window.onscroll = function () {
+if ("ontouchstart" in window) {
+  /* checking that the browser supports the touchscreen */
+  document.addEventListener("touchmove", showButton, false);
+} else {
+  window.addEventListener("scroll", showButton, false);
+}
+
+function showButton() {
   if (window.pageYOffset > 650) {
     clearTimeout(timeout);
     button.style.visibility = "visible";
@@ -46,7 +53,7 @@ window.onscroll = function () {
       button.style.display = "block";
     }
   };
-};
+}
 
 /* header slider */
 $(document).ready(function () {
