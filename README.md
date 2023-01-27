@@ -1,4 +1,4 @@
-# Responsive layout using JavaScript [Monticello](https://www.figma.com/file/wqlFV9VWa3oxnvvexwAy4V/Exam%232?node-id=0%3A1)
+# Responsive layout [Monticello](https://www.figma.com/file/wqlFV9VWa3oxnvvexwAy4V/Exam%232?node-id=0%3A1) using JavaScript
 
 ### HTML validation https://validator.w3.org/ passed: `Document checking completed. No errors or warnings to show. `
 
