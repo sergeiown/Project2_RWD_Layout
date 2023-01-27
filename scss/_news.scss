@@ -82,10 +82,10 @@
     top: 42%;
   }
   .slick-prev {
-    left: -5%;
-    background: url(../img/svg/arrow_left.svg) 0 0 no-repeat;
-    width: 40px;
-    height: 40px;
+    left: -6%;
+    background: url(../img/svg/arrow_left.svg) center center / cover no-repeat;
+    width: 3rem;
+    height: 3rem;
     border: none;
     font-size: 0;
     transition: ease-in-out 0.2s;
@@ -109,10 +109,10 @@
   }
 
   .slick-next {
-    right: -5%;
-    background: url(../img/svg/arrow_right.svg) 0 0 no-repeat;
-    width: 40px;
-    height: 40px;
+    right: -6%;
+    background: url(../img/svg/arrow_right.svg) center center / cover no-repeat;
+    width: 3rem;
+    height: 3rem;
     border: none;
     font-size: 0;
     transition: ease-in-out 0.2s;
