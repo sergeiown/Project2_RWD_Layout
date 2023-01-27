@@ -38,13 +38,14 @@ window.onscroll = function () {
     button.style.visibility = "hidden";
   }
 
-  // window.onmousemove = function () {
-  //   clearTimeout(timeout);
-  //   button.style.visibility = "visible";
-  //   timeout = setTimeout(() => {
-  //     button.style.visibility = "hidden";
-  //   }, 3000);
-  // };
+  window.onresize = function () {
+    if (window.innerWidth < 768) {
+      /* not used (visibility = "visible"/"invisible") due to overwriting the property by the previous function */
+      button.style.display = "none";
+    } else {
+      button.style.display = "block";
+    }
+  };
 };
 
 /* header slider */
