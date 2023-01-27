@@ -137,12 +137,18 @@
       @media only screen and (max-width: 1200px) {
         margin: 4rem 0 0 0;
         height: 14rem;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
       }
 
       .bottom__logo {
         flex-basis: 30%;
         padding: 1rem 0;
+
+        @media only screen and (max-width: 1200px) {
+          width: 100%;
+        }
       }
 
       .bottom__socials {
@@ -152,6 +158,10 @@
         align-items: center;
         gap: 1.25rem;
         margin: 0;
+
+        @media only screen and (max-width: 1200px) {
+          gap: 2rem;
+        }
 
         & li {
           transition: ease-in-out 0.2s;
@@ -173,7 +183,9 @@
       .bottom__copyright {
         flex-basis: 30%;
         padding: 0 70% 0 0;
+
         @media only screen and (max-width: 1200px) {
+          width: 90%;
           padding: 1rem 0;
         }
       }
