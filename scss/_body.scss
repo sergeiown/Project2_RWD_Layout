@@ -5,8 +5,7 @@ html {
 
   body {
     user-select: none;
-    width: 100%;
-    margin: 0 auto;
+    overflow-x: hidden;
     background: #ffffff;
 
     // return button
@@ -26,8 +25,9 @@ html {
       transition: ease-in-out 0.2s;
       visibility: hidden;
 
-      @media screen and (orientation: portrait) {
-        visibility: hidden;
+      @media only screen and (max-width: 1200px) {
+        bottom: 5%;
+        right: 13%;
       }
 
       &:hover {

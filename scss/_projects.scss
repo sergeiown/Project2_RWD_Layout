@@ -1,7 +1,7 @@
 .projects {
   margin: 6.25rem 0 0 0;
   padding: 7.5rem 0 0 0;
-  width: 100%;
+  width: 100vw;
   min-height: 84.25rem;
   text-align: center;
 
@@ -32,7 +32,7 @@
       align-items: center;
       max-width: 25rem;
       min-width: 25rem;
-      height: 100vh;
+      min-height: 50rem;
       margin: 0 auto;
     }
 
@@ -123,7 +123,7 @@
       align-items: center;
       max-width: 25rem;
       min-width: 25rem;
-      height: 100vh;
+      min-height: 50rem;
       margin: 0 auto;
     }
 
