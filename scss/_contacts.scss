@@ -182,9 +182,14 @@
 
   &__map {
     position: absolute;
+
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 0%;
+    width: calc(100vw - 17px);
     height: 100%;
+
+    @media (pointer: coarse) {
+      width: 100vw;
+    }
   }
 }
