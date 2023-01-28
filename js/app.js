@@ -1,11 +1,11 @@
 /* header sticky menu */
 const nav = document.querySelector(".header__container");
 
-// if ("ontouchstart" in window) {
-// window.addEventListener("touchmove", showStickyMenu, false);
-// } else {
-window.addEventListener("scroll", showStickyMenu, false);
-// }
+if ("ontouchstart" in window) {
+  window.addEventListener("touchmove", showStickyMenu, false);
+} else {
+  window.addEventListener("scroll", showStickyMenu, false);
+}
 
 function showStickyMenu() {
   if (window.pageYOffset > 60) {
