@@ -1,4 +1,22 @@
-/* header menu */
+/* header sticky menu */
+const nav = document.querySelector(".header__container");
+
+if ("ontouchstart" in window) {
+  /* checking that the browser supports the touchscreen */
+  window.addEventListener("touchmove", showStickyMenu, false);
+} else {
+  window.addEventListener("scroll", showStickyMenu, false);
+}
+
+function showStickyMenu() {
+  if (window.pageYOffset > 60) {
+    nav.classList.add("sticky");
+  } else {
+    nav.classList.remove("sticky");
+  }
+}
+
+/* header burger menu */
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".header__menu");
 const body = document.querySelector("body");
@@ -38,7 +56,7 @@ if ("ontouchstart" in window) {
 }
 
 function showButton() {
-  if (window.pageYOffset > 600) {
+  if (window.pageYOffset > 400) {
     clearTimeout(timeout);
     button.style.visibility = "visible";
     timeout = setTimeout(() => {
