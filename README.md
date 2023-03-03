@@ -22,4 +22,4 @@ The layout was created using:
 
 ---
 
-![screenshot](./img/screenshot.png)
+![image](https://user-images.githubusercontent.com/112722061/222792809-829e4c35-fc8e-4a48-8e56-74633b802152.png)
